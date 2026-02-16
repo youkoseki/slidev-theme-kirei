@@ -1,11 +1,15 @@
 {
   "name": "slidev-theme-kirei",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "type": "module",
   "keywords": [
     "slidev-theme",
     "slidev"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/youkoseki/slidev-theme-kirei"
+  },
   "engines": {
     "node": ">=18.0.0"
   },
