@@ -1,47 +1,37 @@
-# slidev-theme-youkosekiyoukosekiboth
+# slidev-theme-kirei
 
-[![NPM version](https://img.shields.io/npm/v/slidev-theme-youkosekiyoukosekiboth?color=3AB9D4&label=)](https://www.npmjs.com/package/slidev-theme-youkosekiyoukosekiboth)
-
-A (...) theme for [Slidev](https://github.com/slidevjs/slidev).
-
-<!--
-  Learn more about how to write a theme:
-  https://sli.dev/guide/write-theme.html
---->
-
-<!--
-  run `npm run dev` to check out the slides for more details of how to start writing a theme
--->
-
-<!--
-  Put some screenshots here to demonstrate your theme
-
-  Live demo: [...]
--->
+A clean, minimal [Slidev](https://github.com/slidevjs/slidev) theme with Japanese typography support.
 
 ## Install
 
 Add the following frontmatter to your `slides.md`. Start Slidev then it will prompt you to install the theme automatically.
 
 <pre><code>---
-theme: <b>youkosekiyoukosekiboth</b>
+theme: <b>kirei</b>
 ---</code></pre>
 
 Learn more about [how to use a theme](https://sli.dev/guide/theme-addon#use-theme).
 
 ## Layouts
 
-This theme provides the following layouts:
+- **default** - Standard slide
+- **cover** - Title slide
+- **intro** - Introduction slide
+- **section** - Section divider
+- **two-cols** - Two column layout
+- **three-cols** - Three column layout
+- **center** - Centered content
+- **quote** - Blockquote style
+- **fact** - Key fact / number highlight
+- **statement** - Bold statement
+- **end** - Closing slide
 
-> TODO:
+## Fonts
 
-## Components
+- Sans: Noto Sans JP
+- Mono: JetBrains Mono
 
-This theme provides the following components:
-
-> TODO:
-
-## Contributing
+## Development
 
 - `npm install`
 - `npm run dev` to start theme preview of `example.md`
