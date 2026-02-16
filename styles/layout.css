@@ -1,0 +1,129 @@
+:root {
+  --slidev-theme-primary: #2563eb;
+  --yt-color-fg-soft: #2a2a2a;
+  --yt-color-border: #e5e5e5;
+}
+
+.dark {
+  --yt-color-fg-soft: #d0d0d0;
+  --yt-color-border: #2a2a2a;
+}
+
+
+/* Cover & Section layouts */
+.slidev-layout.cover,
+.slidev-layout.section {
+  @apply h-full grid;
+
+  h1 {
+    @apply text-6xl leading-20 font-bold;
+  }
+
+  h1 + p {
+    @apply -mt-2 mb-4 text-lg;
+  }
+}
+
+.slidev-layout.intro {
+  @apply h-full grid;
+
+  h1 {
+    @apply text-5xl leading-16 font-bold;
+  }
+
+  h1 + p {
+    @apply -mt-2 mb-4 text-lg;
+  }
+}
+
+.slidev-layout.quote {
+  h1 {
+    @apply text-3xl font-bold leading-relaxed mb-4;
+    border-left: 4px solid #9ca3af;
+    @apply pl-6;
+  }
+
+  h1 + p {
+    @apply text-lg pl-6;
+  }
+}
+
+.slidev-layout.statement {
+  h1 {
+    @apply text-4xl font-bold leading-snug;
+  }
+}
+
+.slidev-layout.fact {
+  h1 {
+    @apply text-8xl font-bold mb-2;
+    color: inherit;
+  }
+
+  h1 + p {
+    @apply text-xl;
+  }
+}
+
+.slidev-layout.end {
+  @apply h-full grid text-center;
+
+  h1 {
+    @apply text-5xl font-bold;
+  }
+
+  p {
+    @apply text-lg;
+  }
+}
+
+/* Typography refinements */
+.slidev-layout {
+  color: var(--yt-color-fg-soft);
+  h1 {
+    @apply font-bold mb-6;
+  }
+
+  h2 {
+    @apply text-xl font-semibold mb-2;
+  }
+
+  a {
+    color: var(--slidev-theme-primary);
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.2s;
+
+    &:hover {
+      border-bottom-color: var(--slidev-theme-primary);
+    }
+  }
+
+  blockquote {
+    border-left: 3px solid #9ca3af;
+    @apply pl-4 font-bold opacity-70;
+  }
+
+  code:not(pre code) {
+    background: rgba(37, 99, 235, 0.08);
+    color: var(--slidev-theme-primary);
+    @apply px-1.5 py-0.5 rounded text-sm;
+  }
+
+  table {
+    @apply w-full;
+    border: 1px solid var(--yt-color-border);
+
+    th, td {
+      @apply py-2 px-3 text-left;
+      border: 1px solid var(--yt-color-border);
+    }
+
+    th {
+      @apply font-semibold;
+    }
+  }
+}
+
+.dark .slidev-layout code:not(pre code) {
+  background: rgba(37, 99, 235, 0.2);
+}
